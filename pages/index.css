@@ -169,6 +169,10 @@ body {
   font-size: 44px;
   line-height: 52px;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+}
 
 .reservation__form {
   max-width: 385px;
