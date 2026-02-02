@@ -97,7 +97,69 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reservar uma mesa</h2>
+        <form class="reservation__form">
+          <fieldset class="reservation__fieldset">
+            <label class="reservation__label" for="name">
+              Nome *
+              <input
+                class="reservation__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nome"
+                required
+              >
+            </label>
+            <label class="reservation__label" for="guests">
+              Número de convidados *
+              <input
+                class="reservation__input"
+                type="number"
+                id="guests"
+                name="guests"
+                placeholder="1-8"
+                min="1"
+                max="8"
+                required
+              >
+            </label>
+            <label class="reservation__label" for="date">
+              Data e hora *
+              <input
+                class="reservation__input"
+                type="datetime-local"
+                id="date"
+                name="date"
+                required
+              >
+            </label>
+            <label class="reservation__label" for="email">
+              Seu e-mail *
+              <input
+                class="reservation__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              >
+            </label>
+            <button class="reservation__button" type="submit">
+              Reservar uma mesa
+            </button>
+            <label class="reservation__checkbox-label">
+              <input
+                class="reservation__checkbox"
+                type="checkbox"
+                required
+              >
+              Eu concordo com os termos de uso
+            </label>
+          </fieldset>
+        </form>
+        </section>
       </main>
       <footer class="footer" id="contacts"></footer>
     </div>
